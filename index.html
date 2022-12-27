@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/app.js"></script>
+    <script src="https://kit.fontawesome.com/1a4c810d70.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>ENCRIPTADOR ALURA</title>
+</head>
+<body>
+    <div class="container main">
+        <div class="col1">
+            <div>
+                <img src="/images/Logo.png" alt="alura latam fabricio vera chavez logo encriptador de texto">
+            </div>
+            <div class="input-texto">
+                <textarea cols="20" rows="14" class="texto" placeholder="Ingrese el texto aquí" id="texto-entrada"></textarea>
+            </div>
+            <div class="right-btns">
+                <div class="exclamation">
+                    <i class="fa-solid fa-circle-exclamation"></i><span>Solo letras minúsculas y sin acentos </span>
+                </div>
+                <div class="btn-encrip">
+                    <button id="encriptar" class="botones" onclick="encriptar()">¡Encriptar!</input>
+                    <button id="desencriptar" class="botones">¡Desencriptar!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="container">
+                <div id="resultado">
+                    <!-- <textarea cols="20" rows="14" id="texto-salida" class="texto-salida" disabled> </textarea> -->
+                </div>
+                <div id="invisible">
+                    <div class="img">
+                        <img src="/images/Muñeco.png" alt="encriptador de texto" id="img-encript">
+                    </div>
+                    <div class="no-text">
+                        <h3>Ningún texto fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>
+                <!-- <button type="button" id="btn-invisible" class="botones">Copiar</button> -->
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

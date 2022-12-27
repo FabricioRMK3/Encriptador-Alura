@@ -1,0 +1,128 @@
+body{
+    background-color: #F3F5FC ;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    padding: 50px;
+}
+
+.container.main{
+   display: flex;
+   flex-direction: row;
+}
+
+.col1{
+    flex: 8;
+}
+.col2{
+    flex: 2;
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    height: 800px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.texto{
+    background-color: #F3F5FC;
+    border: none;
+    width: 50vw;
+    font-size: 32px;
+    color: #0A3871 ;
+
+}
+.texto::placeholder{
+    color: #0A3871;
+}
+.texto:focus{
+    outline: none;
+}
+#texto-salida{
+
+    height: 700px;
+    width: 350px;
+    overflow-y: auto;
+    margin: 40px 0 0 0;
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    color: #0A3871;
+    padding-right: 10px;
+}
+#texto-salida:focus{
+    outline: none;
+}
+.input-texto{
+    margin: 20px 0 0 190px;
+}
+.right-btns{
+    margin: 10px 250px 70px 400px;
+    position: absolute;
+    bottom: 0;
+}
+.exclamation{
+    margin-bottom: 10px;
+    color: #495057;
+    font-size: 14px;
+}
+.exclamation i{
+    margin-right: 8px;
+}
+.btn-encrip{
+    display: inline-block;
+    border-color: #0A3871;
+}
+.botones{
+    width: 300px;
+     padding: 15px 0px 15px 0px ; 
+     cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#encriptar{
+    margin-right: 20px;
+    background-color: #0A3871;
+    color: white;
+}
+#encriptar:active{
+    background-color:white;
+    color: #0A3871;
+}
+#desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+#desencriptar:active{
+    background-color: white;
+    color: #0A3871;
+}
+#btn-copiar{
+    width: 100%;
+    color: #0A3871;
+    background-color: white;
+    margin-top: 50px;
+    border-color: #0A3871;
+   
+}
+#btn-copiar:active{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+#resultado{
+   display: block;
+   text-align: justify;
+   word-wrap: wrap;
+   word-break: break-all;
+}
+
+.no-text{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
