@@ -1,3 +1,6 @@
+*{
+    font-size: 16px;
+}
 body{
     background-color: #F3F5FC ;
     height: 100%;
@@ -6,8 +9,9 @@ body{
 }
 
 .container.main{
-   display: flex;
+   display:flex;
    flex-direction: row;
+   height: 50rem;
 }
 .logo{
     animation-name: open-logo;
@@ -16,14 +20,17 @@ body{
 }
 .col1{
     flex: 8;
+    width: 100%;
+   
 }
 .col2{
     flex: 2;
+    position: relative;
     background-color: white;
     padding: 30px;
     display: flex;
     align-items: center;
-    height: 800px;
+    height: 100%;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -33,8 +40,8 @@ body{
 .texto{
     background-color: #F3F5FC;
     border: none;
-    width: 50vw;
-    height: 50vh;
+    width: 50%;
+    height: 50%;
     font-size: 32px;
     color: #0A3871 ;
 
@@ -51,7 +58,7 @@ body{
 .right-btns{
     display: inline-block;
     border-color: #0A3871;
-    margin: 10px 250px 50px 400px;
+    margin: 10px 250px 50px 300px;
     position: absolute;
     bottom: 0;
 }
@@ -63,10 +70,7 @@ body{
 .exclamation i{
     margin-right: 8px;
 }
-/* .btn-encrip{
-    display: inline-block;
-    border-color: #0A3871;
-} */
+
 .botones{
     font-size: 25px;
     font-weight: 700;
@@ -80,6 +84,7 @@ body{
     -o-border-radius: 20px;
 }
 #encriptar{
+    flex: 1;
     margin-right: 100px;
     background-color: #0A3871;
     color: white;
@@ -96,6 +101,7 @@ body{
     -o-transition:.3s;
 }
 #desencriptar{
+    flex: 1;
     background-color: #D8DFE8;
     color: #0A3871;
 }
@@ -186,12 +192,16 @@ body{
 
     .container.main{
         flex-direction: column;
+        height: auto;
     }
     .col1, .col2{
         flex: 0;
     }
+    .col1{
+        width: 100%;
+    }
     .col2{
-        width: 90%;
+        width: 100%;
         margin-top: 30px;
         padding: 10px;
         height: auto;
@@ -246,6 +256,9 @@ body{
     }
     .col1, .col2{
         flex: 0;
+    }
+    .col1{
+        width: 100%;
     }
     .logo{
         margin-bottom: 50px;
@@ -349,4 +362,4 @@ body{
         font-size: 20px
         
     }
-}
+} 
