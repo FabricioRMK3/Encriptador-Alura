@@ -69,12 +69,14 @@ function desEncriptar(texto){
 
 // CONVIERTE CUALQUIER TEXTO CON MAYUSCULAS O CON TILDES EN TEXTO PLANO
 window.addEventListener("load", function() {
-  let elemento = document.getElementById("texto-entrada");
-
-  elemento.addEventListener("input", function() {
-    this.value = this.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    console.log("Page load event triggered");
+    let elemento = document.getElementById("texto-entrada");
+  
+    elemento.addEventListener("input", function() {
+      console.log("Input event triggered");
+      this.value = this.value.toLowerCase().replace(/[^a-zA-ZÑñ\s?,.!\(\)\@\#\$\%\&]/g, "");
+    });
   });
-});
 
 
 // FUNCION PARA COPUAR EL TEXTO DESENCRIPTADO
